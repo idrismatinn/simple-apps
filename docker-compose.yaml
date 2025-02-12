@@ -7,5 +7,5 @@ services:
     env_file: ./apps/.env
     volumes:
       - myapp:/app
-  volumes:
-    - myapp:
+volumes:
+  myapp:
