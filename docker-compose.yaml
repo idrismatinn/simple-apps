@@ -5,8 +5,8 @@ services:
       - "1000:3000"
     restart: always
     env_file: ./apps/.env
-#     volumes:
-#       - myapp:/app
-# volumes:
-#   myapp:
-#     external: true
+    volumes:
+      - myapp:/app
+volumes:
+  myapp:
+    external: true
