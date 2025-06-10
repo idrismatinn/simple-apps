@@ -23,14 +23,10 @@ app.get('/app2', (req, res) => {
 });
 
 app.get('/users', (req, res, next) => {
-  const sql = "SELECT * FROM tb_data ORDER BY id DESC";
-  connection.query(sql, (error, results) => {
-    if (error) {
-      console.error('Database query error:', error); // Tetap log ke console
-      return res.status(500).json({ error: 'Database query failed' }); // Kirim respons ke client
-    }
-    res.status(200).json(results);
-  });
+  const sql = "SELECT * FROM tb_data ORDER BY id desc"
+  connection.query(sql,(fields) => {
+      res.send(fields)
+  })
 });
 
 app.listen(process.env.APP_PORT, () => {
