@@ -3,6 +3,12 @@ body {
     margin: auto;
 }
 
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
 .logo {
     width: 10%;
 }
