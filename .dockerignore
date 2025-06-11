@@ -1,7 +1,0 @@
-apps/database/
-apps/testing/
-apps/sonar-project.properties
-apps/README.md
-Dockerfile
-coverage/
-node_modules/
