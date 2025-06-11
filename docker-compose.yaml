@@ -13,7 +13,7 @@ services:
     image: "mariadb"
     restart: always
     links:
-      - phpmyadmin
+      - dbms
     ports:
       - "3306"
     environment:
