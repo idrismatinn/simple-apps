@@ -26,6 +26,13 @@ describe('Unit Test /app1', () => {
     });
   });
 
+    describe('Unit Test /idris', () => {
+    it('should respond with "Hello Saya Idris!"', async () => {
+      const response = await request(app).get('/idris');
+      expect(response.status).toBe(200);
+    });
+  });
+
 describe('Integration Test Connect Database', () => {
   beforeEach(() => {
     // Set the connection for the application to use
