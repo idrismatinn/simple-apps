@@ -31,6 +31,7 @@ pipeline {
             steps {
                 sh'''
                 cd apps
+                sed -i "s/localhost/db/g" .env
                 sonar-scanner \
                     -Dsonar.projectKey=simple-apps \
                     -Dsonar.sources=. \
