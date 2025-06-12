@@ -48,11 +48,6 @@ pipeline {
                 '''
             }
         }
-        
-        stage('Backup') {
-            steps {
-                 build wait: false, job: 'Backup Image' 
-            }
-        }
+
     }
 }
